@@ -14,6 +14,10 @@ export class StudServiceService {
     private http: HttpClient,
   ) { }
 
+  private log(message: string) {
+    //this.messageService.add(`Service: ${message}`);
+  }
+
   private handleError<T>(operation = 'operation', result?: T) {
     return (error: any): Observable<T> => {
   
@@ -39,11 +43,4 @@ export class StudServiceService {
     );
       //this.messageService.add('HeroService: fetched heroes');
      // return users
-    }
-
-
-  getStudent(){
-    return this.http.get<any[]>, {responseType: "json"}.
-    pipe(tap((_)=> console.log("fetched students")),catchError(this.handleError(any[]>('getStudent'))))
-  }
-}
+    }}

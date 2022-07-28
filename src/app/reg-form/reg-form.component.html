@@ -1,0 +1,83 @@
+<form align="center" action="" class="from-container">
+    <mat-card>
+        <mat-card-header>
+            <mat-card-title>Student Registration Form</mat-card-title>
+        </mat-card-header>
+        <mat-card-content>
+            <div class="row">
+                <div class="col-md-6">
+                    <mat-form-field >
+                        <mat-label>Title</mat-label>
+                        <select matNativeControl [disabled]="disableSelect.value">
+                          <option value="" selected></option>
+                          <option value="Mr">Mr</option>
+                          <option value="Mrs">Mrs</option>
+                          <option value="Miss">Miss</option>
+                        </select>
+                      </mat-form-field>
+                </div>
+                <div class="col-md-6">
+                    <mat-form-field class="dull=width">
+                        <input fromControlName="firstName" matInput placeholder="First Name">
+                    </mat-form-field>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <mat-form-field class="dull=width">
+                    <input matInput placeholder="Middle Name">
+                </mat-form-field>
+                <div class="col-md-6">
+                    <mat-form-field class="dull=width">
+                        <input matInput placeholder="Surname" type="text" name="surname">
+                    </mat-form-field>
+                </div>
+                <div class="col-md-6">
+                    <mat-form-field class="dull=width">
+                        <input matInput placeholder="ID Number" type="number" name="ID">
+                    </mat-form-field>
+                </div>
+                <div class="col-md-6">
+                    <mat-form-field class="dull=width">
+                        <input matInput placeholder="Date of Birth" type="number" name="ID">
+                    </mat-form-field>
+                </div>
+                <div class="col-md-6">
+                    <mat-form-field class="dull=width">
+                        <input matInput placeholder="Email Address">
+                    </mat-form-field>
+                </div>
+                <div class="col-md-6">
+                    <mat-form-field class="dull=width">
+                        <input matInput placeholder="Initials">
+                    </mat-form-field>
+                </div>
+                <div class="col-md-6">
+                    <mat-form-field>
+                        <mat-label>Marrital Status</mat-label>
+                        <select matNativeControl [disabled]="disableSelect.value">
+                          <option value="" selected></option>
+                          <option value="Single">Single</option>
+                          <option value="Married">Married</option>
+                        </select>
+                      </mat-form-field>
+                      
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <mat-radio-group color="primary" class="margin-left">
+                        <mat-radio-button value="male"> Male</mat-radio-button>
+                        <mat-radio-button value="female"> Female</mat-radio-button>
+                    </mat-radio-group>
+                </div>
+            </div>
+        </mat-card-content>
+        <mat-card-actions>
+            <button mat-raised-button color="primary">Save</button>
+        </mat-card-actions>
+    </mat-card>
+    
+    </form>
+    
+    
+     <router-outlet></router-outlet>
